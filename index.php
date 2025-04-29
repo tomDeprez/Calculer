@@ -1,3 +1,12 @@
+<?php
+$calcul = $_GET['calcul']; # string
+
+if (str_contains($calcul, '*')) { # true si * dans le string
+    $tblCalcul = explode("*", $calcul);
+    $result =  $tblCalcul[0] * $tblCalcul[1];
+}
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -35,7 +44,7 @@
         <div class="row">
             <div class="col-3"></div>
             <div class="col-6">
-                <form class="row bg-gray-total" action="calculer.php" method="get">
+                <form class="row bg-gray-total" action="" method="get">
                     <div class="col-12" style="height: 25px;"></div>
                     <div class="col-1"></div>
                     <div class="col-10">
@@ -44,7 +53,7 @@
                                 <input type="text" name="calcul" id="calcul">
                             </div>
                             <div class="col d-flex justify-content-end">
-                                <h1>10</h1>
+                                <h1><?php echo $result ?></h1>
                             </div>
                         </div>
                     </div>
