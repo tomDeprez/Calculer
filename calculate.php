@@ -6,6 +6,14 @@ $calcul = $_GET['calcul'] . $_GET['number'];
 }
 if (isset($_GET['send'])) {
     eval('$result = '.$_GET['calcul'].';');
+    $resultStr = (string) $result;
+    if (strlen($resultStr) > 5) {
+        $result = substr($resultStr, 4, 1) .
+                  substr($resultStr, 3, 1) .
+                  substr($resultStr, 2, 1) .
+                  substr($resultStr, 1, 1) .
+                  substr($resultStr, 0, 1) . "...";
+    }
 }
 ?>
 

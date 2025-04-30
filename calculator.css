@@ -161,3 +161,6 @@ form {
         transform: translateY(0);
     }
 }
+#calcul{
+    background: linear-gradient(45deg, rgb(255, 215, 0), rgb(255, 170, 0));
+}
