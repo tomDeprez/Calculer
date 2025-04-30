@@ -1,4 +1,7 @@
 <?php
+
+
+
 $calcul = $_GET['calcul']; # string
 
 if (str_contains($calcul, '*')) { # true si * dans le string
@@ -44,6 +47,17 @@ if (str_contains($calcul, '*')) { # true si * dans le string
         <div class="row">
             <div class="col-3"></div>
             <div class="col-6">
+                <form action="" method="get">
+
+                    <input type="text" name="nom" placeholder="Nom">
+                    <input type="text" name="Prenom" placeholder="Prenom">
+                    <input type="text" name="age" placeholder="age">
+
+                    <input type="submit" value="Valider">
+
+
+
+                </form>
                 <form class="row bg-gray-total" action="" method="get">
                     <div class="col-12" style="height: 25px;"></div>
                     <div class="col-1"></div>
