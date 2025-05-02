@@ -1,5 +1,7 @@
 # Calculatrice Web en PHP
 
+![Calculatrice](image.png)
+
 Ce projet est une simple calculatrice codée en PHP et HTML avec un peu de Bootstrap pour le style. L'interface permet d'entrer une opération mathématique et d'en afficher le résultat.
 
 ## Fonctionnalités
